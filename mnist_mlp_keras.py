@@ -27,7 +27,7 @@ x_test=x_test.astype('float32')/255.0
 print(f"before label is: {y_train[100]}")
 y_train=to_categorical(y_train)
 print(f"after label is: {y_train[100]}")
-
+print("hi")
 y_test=to_categorical(y_test)
 
 #architecture
