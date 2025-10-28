@@ -37,11 +37,13 @@ model.add(Dense(128,'relu')) #128 neurons, 2nd layer
 model.add(Dense(10,'softmax'))#10 neurons , last layer
 
 #compile 
-model.compile(optimizer='Adam',loss='categorical_crossentropy')
+model.compile(optimizer='Adam',loss='categorical_crossentropy',metrics=['accuracy'])
 
 #train
 model.fit(x_train,y_train,epochs=10,batch_size=64)#64 images will be sent to arch every time 
 
+#evaluate
+model.evaluate
 
 
 print('###########')
